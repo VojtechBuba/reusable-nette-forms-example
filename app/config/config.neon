@@ -1,0 +1,27 @@
+parameters:
+
+
+application:
+	errorPresenter: Error
+	mapping:
+		*: App\*Module\Presenters\*Presenter
+
+
+session:
+	expiration: 14 days
+
+
+services:
+	router: App\RouterFactory::createRouter
+
+	registrationUserInfoContainerFactory:
+		factory: Src\User\Form\Container\BaseUserInfo\RegistrationUserInfoContainerFactory
+
+	userRegistrationFormFactory:
+		factory: Src\User\Form\UserRegistration\UserRegistrationFormFactory
+
+	loyaltyClubRegistrationFormFactory:
+		factory: Src\User\Form\LoayltyClubRegistration\LoyaltyClubRegistrationFormFactory
+
+	requiredLoyaltyUserContainerFactory:
+		factory: Src\User\Form\Container\LoayltyUser\RequiredLoyaltyUserContainerFactory
