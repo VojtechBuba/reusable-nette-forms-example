@@ -13,7 +13,7 @@ class UserRegistration extends \Nette\Application\UI\Form
 	public function __construct(
 		\Src\User\Form\Container\BaseUserInfo\BaseUserInfoContainer $baseUserInfoContainer,
 		\Src\User\Form\Container\Password\PasswordContainer $passwordContainer,
-		\Src\User\Form\Container\LoayltyUser\LoyaltyUserContainer $loyaltyUserContainer
+		\Src\User\Form\Container\LoyaltyUser\LoyaltyUserContainer $loyaltyUserContainer
 	)
 	{
 		parent::__construct();
@@ -65,7 +65,7 @@ class UserRegistration extends \Nette\Application\UI\Form
 	}
 
 
-	public function getLoyaltyContainer(): \Src\User\Form\Container\LoayltyUser\LoyaltyUserContainer
+	public function getLoyaltyContainer(): \Src\User\Form\Container\LoyaltyUser\LoyaltyUserContainer
 	{
 		return $this->getComponent(self::LOYALTY_CONTAINER);
 	}

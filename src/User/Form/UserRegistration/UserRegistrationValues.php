@@ -21,7 +21,7 @@ final class UserRegistrationValues
 	private $becomeLoyaltyMember;
 
 	/**
-	 * @var \Src\User\Form\Container\LoayltyUser\LoyaltyUserValues|NULL
+	 * @var \Src\User\Form\Container\LoyaltyUser\LoyaltyUserValues|NULL
 	 */
 	private $loyaltyUserValues;
 
@@ -29,7 +29,7 @@ final class UserRegistrationValues
 		\Src\User\Form\Container\BaseUserInfo\BaseUserInfoValues $baseUserInfoValues,
 		\Src\User\Form\Container\Password\PasswordValues $passwordValues,
 		bool $becomeLoyaltyMember,
-		?\Src\User\Form\Container\LoayltyUser\LoyaltyUserValues $loyaltyUserValues
+		?\Src\User\Form\Container\LoyaltyUser\LoyaltyUserValues $loyaltyUserValues
 	)
 	{
 		$this->baseUserInfoValues = $baseUserInfoValues;
@@ -56,7 +56,7 @@ final class UserRegistrationValues
 	}
 
 
-	public function getLoyaltyUserValues(): ?\Src\User\Form\Container\LoayltyUser\LoyaltyUserValues
+	public function getLoyaltyUserValues(): ?\Src\User\Form\Container\LoyaltyUser\LoyaltyUserValues
 	{
 		return $this->loyaltyUserValues;
 	}

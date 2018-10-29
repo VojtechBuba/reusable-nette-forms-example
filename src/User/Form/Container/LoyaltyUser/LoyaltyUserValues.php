@@ -1,6 +1,6 @@
 <?php declare(strict_types = 1);
 
-namespace Src\User\Form\Container\LoayltyUser;
+namespace Src\User\Form\Container\LoyaltyUser;
 
 final class LoyaltyUserValues
 {

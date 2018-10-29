@@ -16,19 +16,19 @@ final class LoyaltyClubRegistrationValues
 	private $passwordValues;
 
 	/**
-	 * @var LoyaltyClubRegistrationValues
+	 * @var \Src\User\Form\Container\LoyaltyUser\LoyaltyUserValues
 	 */
-	private $loayltyClubRegistrationValues;
+	private $loyaltyUserValues;
 
 	public function __construct(
 		\Src\User\Form\Container\BaseUserInfo\BaseUserInfoValues $baseUserInfoValues,
 		\Src\User\Form\Container\Password\PasswordValues $passwordValues,
-		LoyaltyClubRegistrationValues $loayltyClubRegistrationValues
+		\Src\User\Form\Container\LoyaltyUser\LoyaltyUserValues $loyaltyUserValues
 	)
 	{
 		$this->baseUserInfoValues = $baseUserInfoValues;
 		$this->passwordValues = $passwordValues;
-		$this->loayltyClubRegistrationValues = $loayltyClubRegistrationValues;
+		$this->loyaltyUserValues = $loyaltyUserValues;
 	}
 
 
@@ -44,9 +44,9 @@ final class LoyaltyClubRegistrationValues
 	}
 
 
-	public function getLoayltyClubRegistrationValues(): LoyaltyClubRegistrationValues
+	public function getLoyaltyUserValues(): \Src\User\Form\Container\LoyaltyUser\LoyaltyUserValues
 	{
-		return $this->loayltyClubRegistrationValues;
+		return $this->loyaltyUserValues;
 	}
 
 }

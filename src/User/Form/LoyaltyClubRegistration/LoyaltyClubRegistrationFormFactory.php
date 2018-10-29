@@ -10,13 +10,13 @@ class LoyaltyClubRegistrationFormFactory
 	private $registrationUserInfoContainerFactory;
 
 	/**
-	 * @var \Src\User\Form\Container\LoayltyUser\RequiredLoyaltyUserContainerFactory
+	 * @var \Src\User\Form\Container\LoyaltyUser\RequiredLoyaltyUserContainerFactory
 	 */
 	private $requiredLoyaltyUserContainerFactory;
 
 	public function __construct(
 		\Src\User\Form\Container\BaseUserInfo\RegistrationUserInfoContainerFactory $registrationUserInfoContainerFactory,
-		\Src\User\Form\Container\LoayltyUser\RequiredLoyaltyUserContainerFactory $requiredLoyaltyUserContainerFactory
+		\Src\User\Form\Container\LoyaltyUser\RequiredLoyaltyUserContainerFactory $requiredLoyaltyUserContainerFactory
 	)
 	{
 		$this->registrationUserInfoContainerFactory = $registrationUserInfoContainerFactory;

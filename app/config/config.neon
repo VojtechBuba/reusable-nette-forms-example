@@ -24,4 +24,4 @@ services:
 		factory: Src\User\Form\LoayltyClubRegistration\LoyaltyClubRegistrationFormFactory
 
 	requiredLoyaltyUserContainerFactory:
-		factory: Src\User\Form\Container\LoayltyUser\RequiredLoyaltyUserContainerFactory
+		factory: Src\User\Form\Container\LoyaltyUser\RequiredLoyaltyUserContainerFactory

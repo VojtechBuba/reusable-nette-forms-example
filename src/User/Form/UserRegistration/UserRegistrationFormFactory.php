@@ -23,7 +23,7 @@ class UserRegistrationFormFactory
 		return new UserRegistration(
 			$this->registrationUserInfoContainerFactory->create(),
 			new \Src\User\Form\Container\Password\PasswordContainer(),
-			new \Src\User\Form\Container\LoayltyUser\LoyaltyUserContainer()
+			new \Src\User\Form\Container\LoyaltyUser\LoyaltyUserContainer()
 		);
 	}
 }
